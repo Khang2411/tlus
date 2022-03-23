@@ -42,23 +42,23 @@ export default function HomePage() {
                     <SwiperSlide><img src="/img/slide2.jpg"></img></SwiperSlide>
                 </Swiper>
 
-                <Nav
+                <Nav className={clsx(styles.container_icon)}
                     activeKey="/home"
-                    style={{ justifyContent: "space-between", backgroundColor: "#fff" }}
+                    style={{ backgroundColor: "#fff" }}
                 >
-                    <Nav.Item style={{ textAlign: "center" }}>
+                    <Nav.Item className={clsx(styles.container_icon__item)} style={{ textAlign: "center" }}>
                         <Nav.Link href="/home"><img src="https://tlus.edu.vn/wp-content/uploads/2021/09/cam-ket-dam-bao-chat-luong-2.png" width={120} height={120}></img></Nav.Link>
                         <b>Cam Kết</b>
                     </Nav.Item>
-                    <Nav.Item style={{ textAlign: "center" }}>
+                    <Nav.Item className={clsx(styles.container_icon__item)} style={{ textAlign: "center" }}>
                         <Nav.Link eventKey="link-1"><img src="https://tlus.edu.vn/wp-content/uploads/2021/09/sinh-vien-dang-ky-hoc.png" width={120} height={120}></img></Nav.Link>
                         <b>Đăng Ký Học</b>
                     </Nav.Item >
-                    <Nav.Item style={{ textAlign: "center" }}>
+                    <Nav.Item className={clsx(styles.container_icon__item)} style={{ textAlign: "center" }}>
                         <Nav.Link>  <Link href="/hoso"><img src="https://tlus.edu.vn/wp-content/uploads/2021/09/Thu-vien-so.png" width={120} height={120}></img></Link></Nav.Link>
                         <b>Nộp Hồ Sơ Nhập Học</b>
                     </Nav.Item>
-                    <Nav.Item style={{ textAlign: "center" }}>
+                    <Nav.Item className={clsx(styles.container_icon__item)} style={{ textAlign: "center"}}>
                         <Nav.Link eventKey="link-2"><img src="https://tlus.edu.vn/wp-content/uploads/2021/09/Lich-cong-tac-2.png" width={120} height={120}></img></Nav.Link>
                         <b>Lịch Công Tác</b>
                     </Nav.Item>
@@ -112,6 +112,7 @@ export default function HomePage() {
                                 <li className="list-group-item">Đại diện Phân hiệu tới thăm hỏi và trao 52 triệu đồng ủng hộ sinh viên Trần Thị Minh Hiếu lớp S21-60KT</li>
                                 <li className="list-group-item">Thông báo tổ chức thi chuẩn Tiếng Anh đầu ra cho trình độ đại học hệ chính quy đợt 1 năm 2022 tại Phân hiệu</li>
                                 <li className="list-group-item">Công ty MiTek thông báo tuyển dụng</li>
+                                <li className="list-group-item">Thông báo tuyển sinh sau dịch</li>
                             </ul>
                         </div>
                     </div>

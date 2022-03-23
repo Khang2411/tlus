@@ -2,6 +2,11 @@
     max-width: 1270px;
     margin: auto;
     margin-bottom: 2rem;
+    .container_icon {
+        &__item {
+            width: 25%;
+        }
+    }
     &__content {
         background-color: #fff;
         margin-top: 1rem;
@@ -39,8 +44,18 @@
         width: 100% !important;
     }
 }
-@media screen and (max-width: 692px) {
+@media screen and (max-width: 690px) {
     .section_main {
+        .container_icon {
+            &__item {
+                width: 25%;
+                // Muốn img full khung
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
         &__content {
             .section_main__container_news {
                 width: 100%;
