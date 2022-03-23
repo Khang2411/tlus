@@ -1,0 +1,18 @@
+.section_header {
+    &__nav {
+        background-color: #e4e6eb !important;
+    }
+    &__container {
+        & > img {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .section_header {
+        &__title>p {
+         display: none;
+        }
+    }
+}
