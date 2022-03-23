@@ -8,6 +8,7 @@ import { useRouter } from 'next/router'
 import { useSelector } from "react-redux";
 import { fetchLogin } from "../redux/features/loginSlice";
 import { RootState, useAppDispatch } from "../redux/app/store";
+import Footer from "../components/Footer";
 
 
 export default function Login() {
@@ -96,15 +97,7 @@ export default function Login() {
                     </div>
                 </div>
             </section>
-
-            <footer className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 " style={{ backgroundColor: "#e4e6eb" }}>
-                <div className="text-dark mb-3 mb-md-0">
-                    Đại Học Thủy Lợi
-                </div>
-                <a href="https://www.facebook.com/phanhieuthuyloi" target="_blank" className="me-4" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
-                </a>
-            </footer>
+         <Footer></Footer>
         </div>
     )
 }
