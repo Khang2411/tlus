@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Header from "../components/Header";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 import { useEffect, useRef } from "react";
 import { useRouter } from 'next/router'
 import { useSelector } from "react-redux";
