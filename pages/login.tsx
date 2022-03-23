@@ -60,7 +60,7 @@ export default function Login() {
 
 
     return (
-        <div className="position-relative">
+        <div>
             <Header></Header>
             <section className="vh-100">
                 <div className="container-fluid h-custom">
