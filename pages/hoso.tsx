@@ -90,7 +90,7 @@ export default function AdmissionsRegister(this: any) {
 // Check login
     useEffect(() => {
         if (data === "") {
-            router.push("/login?referer=hoso", "/login")
+            router.push("/login?referrer=hoso")
         }
     }, [data, router])
 

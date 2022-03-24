@@ -57,17 +57,17 @@ export default function Header() {
 
                             <NavDropdown title="Sinh viên" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Hỗ trợ sinh viên</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Đăng ký học</NavDropdown.Item>
+                                <NavDropdown.Item><Link href="/dieukhien">Đăng ký học</Link></NavDropdown.Item>
                             </NavDropdown>
 
                         </Nav>
+               
+                    {data != "" ? <NavDropdown title={data.name} id="basic-nav-dropdown">
+                        <NavDropdown.Item><Link href="/dieukhien">Đăng ký học</Link></NavDropdown.Item>
+                        <NavDropdown.Item onClick={() => handleLogout()}>Thoát</NavDropdown.Item>
+                    </NavDropdown> : <Link href='/login'><a className='btn btn-light text-primary'>Đăng nhập</a></Link>}
                     </Navbar.Collapse>
                 </Container>
-                {data != "" ? <NavDropdown title={data.name} id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Đăng ký học</NavDropdown.Item>
-                    <NavDropdown.Item onClick={() => handleLogout()}>Thoát</NavDropdown.Item>
-                </NavDropdown> : ""}
-
             </Navbar>
 
             <div className={clsx(styles.section_header__container)}>

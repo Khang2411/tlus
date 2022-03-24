@@ -26,13 +26,14 @@ export default function Login() {
         }
         dispatch(fetchLogin(dataSend)).unwrap()
             .then(() => {
-                if (router.query.referer === "capnhat") {
-                    router.push('/capnhat')
-                } else if (router.query.referer === "hoso") {
+                if (router.query.referrer === "hoso") {
                     router.push('/hoso')
+                } else if (router.query.referrer === "capnhat") {
+                    router.push('/capnhat')
                 } else {
-                    router.push('/')
+                    router.push('/dieukhien')
                 }
+
             })
             .catch(() => {
                 alert("Đăng Nhập Thất Bại")
@@ -46,12 +47,12 @@ export default function Login() {
 
     useEffect(() => {
         if (data != "") {
-            if (router.query.referer === "capnhat") {
-                router.push('/capnhat')
-            } else if (router.query.referer === "hoso") {
+            if (router.query.referrer === "hoso") {
                 router.push('/hoso')
+            } else if (router.query.referrer === "capnhat") {
+                router.push('/capnhat')
             } else {
-                router.push('/')
+                router.push('/dieukhien')
             }
         }
     }, [data, router])
@@ -62,7 +63,7 @@ export default function Login() {
     return (
         <div>
             <Header></Header>
-            <section style={{height: "1195px"}}>
+            <section style={{ height: "1195px" }}>
                 <div className="container-fluid h-custom">
                     <div className="row d-flex justify-content-center align-items-center h-100">
                         <div className="col-md-9 col-lg-6 col-xl-5">
@@ -95,7 +96,7 @@ export default function Login() {
                     </div>
                 </div>
             </section>
-         <Footer></Footer>
+            <Footer></Footer>
         </div>
     )
 }

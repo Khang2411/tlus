@@ -24,8 +24,6 @@ import { fetchHighSchool } from "../redux/features/highSchoolSlice";
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { fetchCv, fetchUpdateCv } from "../redux/features/checkCvSlice";
 import { fetchShowAspiration, fetchShowSubjectsById } from "../redux/features/aspirationSlice";
-import context from "react-bootstrap/esm/AccordionContext";
-
 
 
 export default function UpdateCV(this: any) {
@@ -118,7 +116,7 @@ export default function UpdateCV(this: any) {
 
     useEffect(() => {
         if (data === "") {
-            router.push("/login?referer=capnhat" ,"/login")
+            router.push("/login?referrer=capnhat")
         }
     }, [data, router])
 

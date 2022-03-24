@@ -12,7 +12,12 @@ a {
   text-decoration: none !important;
   cursor: pointer;
 }
-
+li{
+  list-style:none;
+}
+li:hover{
+  color: blue;
+}
 * {
   box-sizing: border-box;
 }
