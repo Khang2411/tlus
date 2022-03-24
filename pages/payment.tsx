@@ -25,7 +25,7 @@ export default function Payment() {
     return (
         <>
             <Header></Header>
-            <form className="mx-auto"action="http://admintlus-2.herokuapp.com/vnpay_php/vnpay_create_payment.php" id="create_form" method="post" style={{ width: "55%" }}>
+            <form className="mx-auto"action="https://admintlus-2.herokuapp.com/vnpay_php/vnpay_create_payment.php" id="create_form" method="post" style={{ width: "55%" }}>
                 <h4 style={{ color: "green" }}>Thanh Toán Hồ Sơ</h4>
                 <div className="form-group">
                     <label htmlFor="language">Loại hàng hóa </label>
