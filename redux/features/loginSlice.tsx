@@ -6,21 +6,21 @@ import callAPI from '../../pages/api/callAPI'
 export const fetchLogin = createAsyncThunk(
     'login/fetch',
     async (data:any) => {
-        const response = await callAPI("POST", "auth/login", data, null)
+        const response = await callAPI("GET", "auth/login", data, null)
         return response.data
     }
 );
 export const fetchJWT = createAsyncThunk(
     'JWT/fetch',
     async (access_token:string) => {
-        const response = await callAPI("POST", "auth/me", null, `Bearer ${access_token} `)
+        const response = await callAPI("GET", "auth/me", null, `Bearer ${access_token} `)
         return response.data
     }
 );
 export const fetchLogout = createAsyncThunk(
     'logout/fetch',
     async (access_token:string) => {
-        const response = await callAPI("POST", "auth/logout", null, `Bearer ${access_token} `)
+        const response = await callAPI("GET", "auth/logout", null, `Bearer ${access_token} `)
         return response.data
     }
 );
