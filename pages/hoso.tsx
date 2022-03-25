@@ -43,13 +43,11 @@ export default function AdmissionsRegister(this: any) {
     }, [dispatch, highSchool.length]);
 
     useEffect(() => {
-
         setStateSchoolName(highSchool)
-
     }, [highSchool])
 
     const [stateSchoolName, setStateSchoolName] = useState([]);
-    const options = stateSchoolName.map((o: any) => `${o.Ten + " " + o.DiaChi + " " + o.MaTinh}`);
+    const options = stateSchoolName.map((o: any) => `${o.name + " " + o.address + " " + o.code}`);
 
     /* **************************************** */
     const [state, setState] = useState({

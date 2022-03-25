@@ -5,7 +5,7 @@ import axios from 'axios';
 export const fetchHighSchool =  createAsyncThunk(
     'highSchool/fetch',
     async () => {
-        const response = await axios.get('http://tuyensinhapi.hiu.vn/api/v1.0/truongthpts');
+        const response = await axios.get('https://api.xettuyen.umt.edu.vn/api/school');
         return response.data
     }
 );
