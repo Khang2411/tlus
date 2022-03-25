@@ -76,7 +76,7 @@ export default function TraCuu() {
                     </form>
                     {handleCheckProfile()}
                     {cv != 0 && state.cccd != "" ? <> <span className="profile">Hồ Sơ : {cv[0].surname} {cv[0].name}</span>
-                        <a href={"http://localhost:8080/admintlus/" + cv[0].slug_pdf} target="_blank" style={{ marginLeft: "1.5rem" }} rel="noreferrer">
+                        <a href={"https://admintlus-2.herokuapp.com/" + cv[0].slug_pdf} target="_blank" style={{ marginLeft: "1.5rem" }} rel="noreferrer">
                             <span style={{ color: "rgb(0, 0, 255)" }}>Xem tại đây</span></a>
                         <a href="/capnhat" target="_blank"><span style={{ color: "rgb(0, 0, 255)", marginLeft: "1rem" }}>Cập nhật</span></a></> : ""}
 
